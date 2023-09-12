@@ -55,7 +55,7 @@ const resendEmailVerificationToken = asyncHandler(async (req, res) => {
     user.email,
     "Account Verification",
     payload,
-    "./emails/template/accountVerification.handlebars"
+    "./emails/templates/accountVerification.handlebars"
   );
 
   res.json({
